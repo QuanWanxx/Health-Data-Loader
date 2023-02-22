@@ -46,13 +46,13 @@ Using the **Managed Idenitiy** for authentication to the FHIR service or to the 
 
 1. Provide Access of the FHIR server to the Azure Container Instance.
 
-    If you are using the Azure API for FHIR or the FHIR service in Azure Healthcare APIs, assign the **FHIR Data Reader** role to the Azure Container Instance deployed above.
+    If you are using the Azure API for FHIR or the FHIR service in Azure Healthcare APIs, assign the **FHIR Data Contributor** role to the Azure Container Instance deployed above.
 
     If you are using the FHIR server for Azure with anonymous access, then you can skip this step.
 
 2. Provide Access of the Azure Storage to the Azure Container Instance.
    
-    Assign the **FHIR Data Reader** role to of the Storage to the Azure Container Instance deployed above.
+    Assign the **Storage Blob Data Reader** role to of the Storage to the Azure Container Instance deployed above.
 
     The Azure Container Instance will read blobs from **"Blob List File"**.
 
