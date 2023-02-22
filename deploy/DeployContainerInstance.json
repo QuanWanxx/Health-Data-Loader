@@ -37,6 +37,13 @@
                 "description": "Then authentication to access source API server. Set None if you are using an public server API instance."
             }
         },
+        "blobListFile": {
+            "type": "string",
+            "defaultValue": "data/fhirsimple_bloblist.txt",
+            "metadata": {
+                "description": "The blob list file, the Uploader Tool will read data from those blobs."
+            }
+        },
         "readBlobConcurrency": {
             "type": "int",
             "defaultValue": 30,
@@ -185,7 +192,7 @@
                                 },
                                 {
                                     "name": "blobListFile",
-                                    "value": "data/fhir50g_bloblist.txt"
+                                    "value": "[parameters('blobListFile')]"
                                 }
                             ]
                         }
